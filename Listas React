@@ -1,0 +1,16 @@
+const arr = [
+    { nome : "Susana"},
+    { nome : "Renato"}
+] 
+//arr.map() //mapeia
+//(e) => e.nome //obtem o nome
+//(n) => <h3></h3>
+
+
+function Lista(){
+    return (
+        <div>
+            {arr.map((e) => <h3 key ={e.nome}>{e.nome}</h3>)}
+        </div>
+    )
+}export default Lista
